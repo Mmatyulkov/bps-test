@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color: #f6f6f6;
+  font-size: 30px;
+  line-height: 35px;
+  position: relative;
+}
+h3 {
+  font-size: 20px;
+  line-height: 60px;
+}
+
+header {
+  text-align: center;
+  margin-top: 200px;
+  /* width: 100vw; */
+}
+
+header + ul {
+  margin-top: 30px;
+}
+
+button {
+  /* border: 1px; */
+  border-color: #E41579;
+  border-width: 1px;
+  border-radius: 40px;
+  border-style: solid;
+  background-color: white;
+  /* height: 70px; */
+  /* width: 70px; */
+  line-height: 0;
+  color: #E41579;
+  font-size: 36px;
+  margin-right: 20px;
+  padding: 34px 27px 34px 27px;
+  transition: 0.2s ease-in;
+  outline: none;
+}
+
+.btn-answer {
+  transform: rotate(45deg);
+  background-color: #E41579;
+  color: #f6f6f6;
+}
+
+.answer {
+  /* display: block; */
+}
+
+span {
+  /* flex-direction: column; */
+}
+
+.App {
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* height: 100vh; */
+}
+
+li {
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+li + li {
+  margin-top: 45px;
+}
+
+p + p {
+  /* margin-top: 40px; */
+}
+
+p {
+  /* margin-top: 20px; */
+}
+
+.question-block {
+  display: flex;
+  align-items: center;
+}
+
+.question {
+  /* padding-top: 27px; */
+  /* padding-bottom: 27px; */
+  /* height: 72px; */
+}
+
+.img {
+  background-image: url("C:/project/bps-test/src/broccoli_img.png");
+  width: 157px;
+  height: 190px;
+  position: absolute;  
+}
+
+@media (max-width: 767px) {
+  .img {
+    /* left: 145px; */
+    top: 30px;
+    margin-left: 130px;
+    /* margin-bottom: 100px; */
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 80px;
+    line-height: 95px;
+  }
+
+  h3 {
+    line-height: 60px;
+  }
+
+  ul {
+    margin-left: 30px;
+    /* float: left; */
+    width: 100vw;
+  }
+
+  .img {
+    top: 100px;
+    margin-left: 350px;
+    /* margin-bottom: 100px; */
+    /* margin: 0px; */
+    transform: rotate(-60deg) scale(1.3);
+  }
+
+  .App {
+    /* align-items: stretch; */
+    /* width: 100vw; */
+  }
+}
+
+@media (min-width: 1024px) {
+  ul {
+    float: none;
+    margin-right: 250px;
+    width: auto;
+  }
+
+  .App {
+    align-items: center;
+    /* width: 100vw; */
+  }
+
+  .img {
+    top: 520px;
+    margin-left: 450px;
+    transform: rotate(-60deg) scale(2.5);
+      
+  }
+}
