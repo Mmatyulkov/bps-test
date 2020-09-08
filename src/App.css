@@ -20,7 +20,6 @@ h2 {
 header {
   text-align: center;
   margin-top: 200px;
-  /* width: 100vw; */
 }
 
 header + ul {
@@ -60,8 +59,6 @@ section {
   display:  flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* height: 100vh; */
 }
 
 li {
@@ -76,8 +73,6 @@ li + li {
 
 .question-block {
   display: flex;
-  /* align-items: center; */
-  /* padding-top: 25px; */
 }
 
 .img {
@@ -90,11 +85,8 @@ li + li {
 
 @media (max-width: 767px) {
   .img {
-    /* left: 145px; */
     top: 30px;
-    /* right: 30px; */
     margin-left: 130px;
-    /* margin-bottom: 100px; */
   }
 
   ul {
@@ -117,31 +109,29 @@ li + li {
   }
 
   ul {
-    margin-left: 30px; /* wtf */
-    /* float: left; */
-    width: 100vw;
+    margin-left: 10px;
+    width: 99vw;
   }
 
   .img {
     top: 100px;
     margin-left: 350px;
-    /* margin-bottom: 100px; */
-    /* margin: 0px; */
     transform: rotate(-60deg) scale(1.3);
   }
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   ul {
     float: none;
     margin-right: 250px;
+    margin-left: 0;
     width: auto;
+
   }
 
   .App {
     align-items: center;
-    /* width: 100vw; */
   }
 
   .img {
@@ -150,9 +140,7 @@ li + li {
     margin-left: 150px;
     height: 750px;
     width: 690px;
-    /* transform: rotate(-60deg) scale(2.5); */
     transform: rotate(0deg) scale(1);
-      
   }
 }
 
@@ -160,16 +148,12 @@ li + li {
   display: flex;
 }
 
-/* .Collapsible {
-  padding-top: 25px;
-} */
-
-.first {
-  /* margin-top: 70px; */
+.question {
   font-weight: normal;
   max-width: 550px;
   transition: 0.5s;
-  /* max-height: 0px; */
+  height: 0px;
+  overflow: hidden;
 }
 
 strong {
@@ -178,47 +162,10 @@ strong {
 }
 
 h3 {
-  /* margin-top: 25px; */
-  /* line-height: 70px; */
   font-size: 16px;
-  /* width: 100vw; */
   padding: 25px 0px;
 }
 
 .bg {
   background-color: #f6f6f6;
-  max-width: 550px;
 }
-
-.opened {
-  opacity: 1;
-  max-height: 200px;
-  transform: translateY(0px);
-}
-
-.closed {
-  opacity: 0;
-  max-height: 0;
-  transform: translateY(-200px);
-}
-
-
-/* @keyframes slideout {
-  38% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 0;
-    max-height: 0;
-    transform: translateY(-200px);
-  }
-} */
-
-/* @keyframes slidein {
-  to {
-    opacity: 1;
-    max-height: 133px;
-    transform: translateY(0px);
-  }
-} */
