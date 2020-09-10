@@ -130,6 +130,10 @@ li + li {
     width: 690px;
     transform: rotate(0deg) scale(1);
   }
+
+  header {
+    margin-top: 150px;
+  }
 }
 
 .question {
