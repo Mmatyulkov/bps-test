@@ -10,11 +10,9 @@ h1 {
   color: #f6f6f6;
   font-size: 30px;
   line-height: 35px;
-  position: relative;
 }
 h2 {
   font-size: 20px;
-  line-height: 60px;
 }
 
 header {
@@ -27,30 +25,29 @@ header + ul {
 }
 
 button {
-  /* border: 1px; */
-  border-color: #E41579;
   border-width: 1px;
-  border-radius: 40px;
   border-style: solid;
+  border-color: #E41579;
+  border-radius: 40px;
   background-color: white;
   height: 70px;
   width: 70px;
-  line-height: 0;
   color: #E41579;
-  font-size: 36px;
+  font-size: 30px;
   margin-right: 20px;
-  padding: 0px 27px 0px 27px;
   transition: 0.2s ease-in;
   outline: none;
   flex-grow: 0; flex-shrink: 0;
+  transform: rotate(45deg);
 }
 
-section {
-  flex-grow: 1; flex-shrink: 1
+button:hover {
+  box-shadow: inset 0px 0px 2px 0px #E41579;
+  filter: drop-shadow(0 0 2px #E41579);
 }
 
 .btn-answer {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
   background-color: #E41579;
   color: #f6f6f6;
 }
@@ -63,8 +60,6 @@ section {
 
 li {
   list-style-type: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 li + li {
@@ -91,11 +86,9 @@ li + li {
 
   ul {
     margin-left: 10px;
+    padding-right: 10px;
   }
 
-  h2, ul {
-    min-width: 320px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -109,7 +102,7 @@ li + li {
   }
 
   ul {
-    margin-left: 10px;
+    margin-left: 20px;
     width: 99vw;
   }
 
@@ -123,15 +116,10 @@ li + li {
 
 @media (min-width: 1024px) {
   ul {
-    float: none;
     margin-right: 250px;
     margin-left: 0;
     width: auto;
 
-  }
-
-  .App {
-    align-items: center;
   }
 
   .img {
@@ -142,10 +130,6 @@ li + li {
     width: 690px;
     transform: rotate(0deg) scale(1);
   }
-}
-
-.test {
-  display: flex;
 }
 
 .question {
@@ -164,8 +148,4 @@ strong {
 h3 {
   font-size: 16px;
   padding: 25px 0px;
-}
-
-.bg {
-  background-color: #f6f6f6;
 }

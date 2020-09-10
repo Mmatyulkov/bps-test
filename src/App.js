@@ -11,21 +11,21 @@ function App(question) {
       </header>
       <ul>
         <li>
-          <div className="question-block"><button>+</button><h3>Как оформить заказ?</h3></div>
+          <div className="question-block"><button>⨉</button><h3>Как оформить заказ?</h3></div>
         </li>
         {questions.map((question) => (
-        <li>
+        <li key={question.key}>
           <Question title={question.title} content={question.content}></Question>
         </li>
         ))}
         <li>
-          <div className="question-block"><button>+</button><h3>Условия доставки за предалами МКАД</h3></div>
+          <div className="question-block"><button>⨉</button><h3>Условия доставки за предалами МКАД</h3></div>
         </li>
         <li>
-          <div className="question-block"><button>+</button><h3>Какие способы оплаты у вас есть?</h3></div>
+          <div className="question-block"><button>⨉</button><h3>Какие способы оплаты у вас есть?</h3></div>
         </li>  
         <li>
-          <div className="question-block"><button>+</button><h3>У меня есть промокод, но я не понимаю как им пользоваться</h3></div>
+          <div className="question-block"><button>⨉</button><h3>У меня есть промокод, но я не понимаю как им пользоваться</h3></div>
         </li>
       </ul>
     </div>
@@ -69,7 +69,7 @@ export const Question = (props) => {
   }, [isExpanded, contentsElement])
 
   return <div className="question-block">
-    <button id="button" onClick={onClick}>+</button>
+    <button id="button" onClick={onClick}><span>⨉</span></button>
     <section>
       <h3>{props.title}</h3>
       <p className="question closed" id="question" ref={contentsElement} style={{ height }}>{props.content}</p>
